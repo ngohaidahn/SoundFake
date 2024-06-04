@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_blue_500_dark">#0B82E0</color>
+
+    <color name="md_blue_600">#1E88E5</color>
+    <string name="tv_detailsound_header">Dog</string>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="detail_sound_color">#0B82E0</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#6350FF</color>
+</resources>

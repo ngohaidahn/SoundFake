@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Don\'t Touch My Phone</string>
+    <string name="tv_home_title">Nhấn để hoạt động</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_name">text_string</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="bell">Door Bell</string>
+    <string name="hello">Hello</string>
+    <string name="harp">Harp</string>
+    <string name="laughing">Laughing</string>
+    <string name="clock">Alarm Clock</string>
+    <string name="rooster">Rooster</string>
+    <string name="piano">Piano</string>
+    <string name="sneeze">Sneeze</string>
+    <string name="train">Train</string>
+    <string name="chimes">Wind Chimes</string>
+
+    <string name="whistle">Whistle</string>
+
+    <string name="tv_detailSound_apply">Áp dụng</string>
+
+</resources>

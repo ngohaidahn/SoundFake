@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/iconSound"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="txt"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/iconOnFlash"
+            app:layout_constraintStart_toEndOf="@+id/iconSound"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iconOnFlash"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            app:srcCompat="@drawable/ic_setting_flash"
+            app:tint="#5E466C71"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iconOnVibration"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            app:tint="#5E466C71"
+            app:layout_constraintBottom_toBottomOf="@+id/iconOnFlash"
+            app:layout_constraintStart_toEndOf="@+id/iconOnFlash"
+            app:layout_constraintTop_toTopOf="@+id/iconOnFlash"
+            app:srcCompat="@drawable/ic_vibration" />
+
+        <ImageView
+            android:id="@+id/iconOnSound"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            app:tint="#5E466C71"
+            app:layout_constraintBottom_toBottomOf="@+id/iconOnVibration"
+            app:layout_constraintStart_toEndOf="@+id/iconOnVibration"
+            app:layout_constraintTop_toTopOf="@+id/iconOnVibration"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_volumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="50"
+            android:textColor="#5E466C71"
+            app:layout_constraintBottom_toBottomOf="@+id/iconOnSound"
+            app:layout_constraintStart_toEndOf="@+id/iconOnSound"
+            app:layout_constraintTop_toTopOf="@+id/iconOnSound"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="15s"
+            android:textColor="#5E466C71"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_volumn"
+            app:layout_constraintStart_toEndOf="@+id/tv_volumn"
+            app:layout_constraintTop_toTopOf="@+id/tv_volumn"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/bt_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_play"
+            app:layout_constraintBottom_toBottomOf="@+id/iconOnFlash"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
